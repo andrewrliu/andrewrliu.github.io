@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+        
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Responsive Portfolio Website</title>
+    </head>
+    <body>
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HEADER ====================-->
+            <header class="header" id="header">
+                <nav class="nav container">
+                    <h4>andrewliu.fyi</h4>
+
+                    <div class="nav__menu" id="nav-menu">
+                        <ul class="nav__list grid">
+                            <li class="nav__item">
+                                <a href="index.html" class="nav__link">
+                                    <i class="uil uil-estate nav__icon"></i> Home
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="aboutme.html" class="nav__link active-link">
+                                    <i class="uil uil-user nav__icon"></i> About Me
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="interest.html" class="nav__link">
+                                    <i class="uil uil-user nav__icon"></i> Interests
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="portfolio.html" class="nav__link">
+                                    <i class="uil uil-scenery nav__icon"></i> Portfolio
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="project.html" class="nav__link">
+                                    <i class="uil uil-scenery nav__icon"></i> Projects
+                                </a>
+                            </li>
+                        </ul>
+                        <i class="uil uil-times nav__close" id="nav-close"></i>
+                    </div>
+
+                    <div class="nav__btns">
+                        <!-- Theme Change Button -->
+                        <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                        <div class="nav__toggle" id="nav-toggle">
+                            <i class="uil uil-apps"></i>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <h2 class="section__title">About Me</h2>
+                <div class="about__container container grid">
+                    <img src="assets/img/aboutme_img.JPG" alt="" class="about__img">
+
+                    <div class="about__data">
+                        <p class="about__description">
+                            I graduated cum laude from UCLA HSSEAS in Dec 2022 with a B.S. in Electrical Engineering. For the first three summers of undergrad, I interned at NASA JPL where I worked on NISAR, EMIT, and MSR.  
+                            <br><br>
+                            Unknowingly, I discovered my passion for finance as a result of my newfound free time during quarantine. It started with using options to hedge my personal portfolio but continued with self-studying more traditional finance topics. 
+                            Some teachings I found most valuable include MIT Professor Lo's Financial Theory I and NYU Professor Damodaran's Valuation + Corporate Finance courses.
+                            <br><br>
+                            Most recently, I interned at Wedbush as a TMT investment banking analyst the summer after my senior year. Currently, I am based in San Francisco working at Cambridge Associates as an investment analyst.
+                            <br><br>
+                            In my free time, you'll probably find me optimizing credit card rewards, collecting fragrances, cooking new recipes, playing basketball/golf, and hiking/traveling.
+                        </p>
+
+                        <div class="about__info">
+                            <div>
+                                <span class="about__info-title">125+</span>
+                                <span class="about__info-name"> Miles on <br> Boosted Stealth</span>
+                            </div>
+
+                            <div>
+                                <span class="about__info-title">2</span>
+                                <span class="about__info-name"> Coachellas <br> Attended </span>
+                            </div>
+
+                            <div>
+                                <span class="about__info-title">~13</span>
+                                <span class="about__info-name"> Golf <br> Handicap </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--==================== HIGHLIGHT ====================-->
+                <h2 class="section__title">Highlights</h2>
+                <div class="highlight__container container">
+                    <div class="highlight__tabs">
+                        <div class="highlight__button button--flex highlight__active" data-target="#professional">
+                            <i class="uil uil-graduation-cap highlight__icon"></i>
+                            Professional
+                        </div>
+
+                        <div class="highlight__button button--flex" data-target="#personal">
+                            <i class="uil uil-bag highlight__icon"></i>
+                            Personal
+                        </div>
+                    </div>
+
+                    <div class="highlight__sections">
+                        <!--==================== HIGHLIGHT CONTENT 1 ====================-->
+                        <div class="highlight__content highlight__active" data-content id="professional">
+                            <!--==================== HIGHLIGHT 1 ====================-->
+                            <div class="highlight__data">
+                                <div>
+                                    <h3 class="highlight__title">UCLA - Los Angeles, CA</h3>
+                                    <span class="highlight__subtitle">B.S. in Electrical Engineering</span>
+                                    <div class="highlight__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        Sep 2018 - Dec 2022
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="highlight__rounder"></span>
+                                    <span class="highlight__line"></span>
+                                </div>
+                            </div>
+
+                            <!--==================== HIGHLIGHT 2 ====================-->
+                            <div class="highlight__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="highlight__rounder"></span>
+                                    <span class="highlight__line"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="highlight__title">NASA JPL - Pasadena, CA</h3>
+                                    <span class="highlight__subtitle">Summer Intern</span>
+                                    <div class="highlight__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        Jun 2019 - Sep 2019
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--==================== HIGHLIGHT 3 ====================-->
+                            <div class="highlight__data">
+                                <div>
+                                    <h3 class="highlight__title">NASA JPL - Pasadena, CA</h3>
+                                    <span class="highlight__subtitle">Summer/Year-Round Intern</span>
+                                    <div class="highlight__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        Jun 2020 - Sep 2021
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="highlight__rounder"></span>
+                                    <span class="highlight__line"></span>
+                                </div>
+                            </div>
+
+                            <!--==================== HIGHLIGHT 4 ====================-->
+                            <div class="highlight__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="highlight__rounder"></span>
+                                    <span class="highlight__line"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="highlight__title">Wedbush Securities - San Francisco, CA</h3>
+                                    <span class="highlight__subtitle">TMT Investment Banking Summer Analyst</span>
+                                    <div class="highlight__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        Jun 2022 - Aug 2022
+                                    </div>
+                                </div>
+                            </div>
+
+                             <!--==================== HIGHLIGHT 5 ====================-->
+                            <div class="highlight__data">
+                                <div>
+                                    <h3 class="highlight__title">Cambridge Associates - San Francisco, CA</h3>
+                                    <span class="highlight__subtitle">Investment Analyst</span>
+                                    <div class="highlight__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        Jan 2023 - Present
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="highlight__rounder"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--==================== HIGHLIGHT CONTENT 2 ====================-->
+                        <div class="highlight__content" data-content id="personal">
+                            <!--==================== HIGHLIGHT 1 ====================-->
+                            <div class="highlight__data">
+                                <div>
+                                    <h3 class="highlight__title">Broke 80 for the First Time</h3>
+                                    <span class="highlight__subtitle">75 (Par 71) Alhambra Golf Course - Blue Tees</span>
+                                    <div class="highlight__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        Aug 2018
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="highlight__rounder"></span>
+                                    <span class="highlight__line"></span>
+                                </div>
+                            </div>
+
+                            <!--==================== HIGHLIGHT 2 ====================-->
+                            <div class="highlight__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="highlight__rounder"></span>
+                                    <span class="highlight__line"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="highlight__title">First Options Trade</h3>
+                                    <span class="highlight__subtitle">TSLA 2/28/20 $1180 Call</span>
+                                    <div class="highlight__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        Feb 2020
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--==================== HIGHLIGHT 3 ====================-->
+                            <div class="highlight__data">
+                                <div>
+                                    <h3 class="highlight__title">Boosted Board Stealth</h3>
+                                    <span class="highlight__subtitle">Bought and completely repaired a used boosted stealth</span>
+                                    <div class="highlight__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        Feb 2023
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="highlight__rounder"></span>
+                                    <span class="highlight__line"></span>
+                                </div>
+                            </div>
+
+                            <!--==================== HIGHLIGHT 4 ====================-->
+                            <div class="highlight__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="highlight__rounder"></span>
+                                    <!-- <span class="highlight__line"></span> -->
+                                </div>
+
+                                <div>
+                                    <h3 class="highlight__title">Launched Personal Website</h3>
+                                    <span class="highlight__subtitle">Coded and hosted own website (andrewliu.fyi)</span>
+                                    <div class="highlight__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        May 2023
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--==================== COURSEWORK ====================-->
+                <h2 class="section__title">Relevant Coursework</h2>
+                <div class="coursework__container container grid">
+                    <!--==================== COURSEWORK 1 - MATH ====================-->
+                    <div class="coursework__content">
+                        <div>
+                            <i class="uil uil-calculator-alt coursework__icon"></i>
+                            <h3 class="coursework__title">Math</h3>
+                        </div>
+
+                        <span class="button button--flex button--small button--link coursework__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+
+                        <div class="coursework__modal">
+                            <div class="coursework__modal-content">
+                                <h4 class="coursework__modal-title">Math</h4>
+                                <i class="uil uil-times coursework__modal-close"></i>
+
+                                <ul class="coursework__modal-coursework grid">
+                                    <li class="coursework__modal-service">
+                                        <i class="uil uil-check-circle coursework__modal-icon"></i>
+                                        <p>Math 32A/32B - Calculus of Several Variables</p>
+                                    </li>
+                                    <li class="coursework__modal-service">
+                                        <i class="uil uil-check-circle coursework__modal-icon"></i>
+                                        <p>Math 33A - Linear Algebra</p>
+                                    </li>
+                                    <li class="coursework__modal-service">
+                                        <i class="uil uil-check-circle coursework__modal-icon"></i>
+                                        <p>Math 33B - Differential Equations</p>
+                                    </li>
+                                    <li class="coursework__modal-service">
+                                        <i class="uil uil-check-circle coursework__modal-icon"></i>
+                                        <p>ECE 131A - Probability & Statistics</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--==================== COURSEWORK 2 - PHYSICS ====================-->
+                    <div class="coursework__content">
+                        <div>
+                            <i class="uil uil-expand-from-corner coursework__icon"></i>
+                            <h3 class="coursework__title">Physics</h3>
+                        </div>
+
+                        <span class="button button--flex button--small button--link coursework__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+
+                        <div class="coursework__modal">
+                            <div class="coursework__modal-content">
+                                <h4 class="coursework__modal-title">Physics</h4>
+                                <i class="uil uil-times coursework__modal-close"></i>
+
+                                <ul class="coursework__modal-coursework grid">
+                                    <li class="coursework__modal-service">
+                                        <i class="uil uil-check-circle coursework__modal-icon"></i>
+                                        <p>Physics 1A - Mechanics</p>
+                                    </li>
+                                    <li class="coursework__modal-service">
+                                        <i class="uil uil-check-circle coursework__modal-icon"></i>
+                                        <p>Physics 1B - Fluids, Oscillations, Waves, and Electricity</p>
+                                    </li>
+                                    <li class="coursework__modal-service">
+                                        <i class="uil uil-check-circle coursework__modal-icon"></i>
+                                        <p>Physics 1C - Magnetism, Electrodynamics, Optics, and Special Relativity</p>
+                                    </li>
+                                    <li class="coursework__modal-service">
+                                        <i class="uil uil-check-circle coursework__modal-icon"></i>
+                                        <p>ECE 2 - Physics for Electrical Engineers (Semiconductor Physics)</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--==================== COURSEWORK 3 - CS ====================-->
+                    <div class="coursework__content">
+                        <div>
+                            <i class="uil uil-brackets-curly coursework__icon"></i>
+                            <h3 class="coursework__title">CS</h3>
+                        </div>
+
+                        <span class="button button--flex button--small button--link coursework__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+
+                        <div class="coursework__modal">
+                            <div class="coursework__modal-content">
+                                <h4 class="coursework__modal-title">Computer Science</h4>
+                                <i class="uil uil-times coursework__modal-close"></i>
+
+                                <ul class="coursework__modal-coursework grid">
+                                    <li class="coursework__modal-service">
+                                        <i class="uil uil-check-circle coursework__modal-icon"></i>
+                                        <p>CS 31/32 - Intro to Computer Science I/II</p>
+                                    </li>
+                                    <li class="coursework__modal-service">
+                                        <i class="uil uil-check-circle coursework__modal-icon"></i>
+                                        <p>CS 33 - Intro to Computer Organization</p>
+                                    </li>
+                                    <li class="coursework__modal-service">
+                                        <i class="uil uil-check-circle coursework__modal-icon"></i>
+                                        <p>CS M148 - Data Science</p>
+                                    </li>
+                                    <li class="coursework__modal-service">
+                                        <i class="uil uil-check-circle coursework__modal-icon"></i>
+                                        <p>CS M151B - Computer Systems Architecture</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--==================== COURSEWORK 4 - CIRCUITS ====================-->
+                    <div class="coursework__content">
+                        <div>
+                            <i class="uil uil-circuit coursework__icon"></i>
+                            <h3 class="coursework__title"> Circuits </h3>
+                        </div>
+
+                        <span class="button button--flex button--small button--link coursework__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+
+                        <div class="coursework__modal">
+                            <div class="coursework__modal-content">
+                                <h4 class="coursework__modal-title"> Circuits </h4>
+                                <i class="uil uil-times coursework__modal-close"></i>
+
+                                <ul class="coursework__modal-coursework grid">
+                                    <li class="coursework__modal-service">
+                                        <i class="uil uil-check-circle coursework__modal-icon"></i>
+                                        <p>ECE 10/110 - Circuit Theory I/II</p>
+                                    </li>
+                                    <li class="coursework__modal-service">
+                                        <i class="uil uil-check-circle coursework__modal-icon"></i>
+                                        <p>CS M51A - Logic Design of Digital Systems</p>
+                                    </li>
+                                    <li class="coursework__modal-service">
+                                        <i class="uil uil-check-circle coursework__modal-icon"></i>
+                                        <p>ECE 115A - Analog Circuits I</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--==================== COURSEWORK 5 - SYSTEMS ====================-->
+                    <div class="coursework__content">
+                        <div>
+                            <i class="uil uil-analytics coursework__icon"></i>
+                            <h3 class="coursework__title"> Systems </h3>
+                        </div>
+
+                        <span class="button button--flex button--small button--link coursework__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+
+                        <div class="coursework__modal">
+                            <div class="coursework__modal-content">
+                                <h4 class="coursework__modal-title"> Systems </h4>
+                                <i class="uil uil-times coursework__modal-close"></i>
+
+                                <ul class="coursework__modal-coursework grid">
+                                    <li class="coursework__modal-service">
+                                        <i class="uil uil-check-circle coursework__modal-icon"></i>
+                                        <p>ECE 102 - System and Signals</p>
+                                    </li>
+                                    <li class="coursework__modal-service">
+                                        <i class="uil uil-check-circle coursework__modal-icon"></i>
+                                        <p>ECE 113 - Digital Signal Processing</p>
+                                    </li>
+                                    <li class="coursework__modal-service">
+                                        <i class="uil uil-check-circle coursework__modal-icon"></i>
+                                        <p>ECE 132A - Intro to Communication Systems</p>
+                                    </li>
+                                    <li class="coursework__modal-service">
+                                        <i class="uil uil-check-circle coursework__modal-icon"></i>
+                                        <p>ECE 141 - Principles of Feedback Control</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--==================== COURSEWORK 6 - ELECTIVES ====================-->
+                    <div class="coursework__content">
+                        <div>
+                            <i class="uil uil-apps coursework__icon"></i>
+                            <h3 class="coursework__title"> Electives </h3>
+                        </div>
+
+                        <span class="button button--flex button--small button--link coursework__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+
+                        <div class="coursework__modal">
+                            <div class="coursework__modal-content">
+                                <h4 class="coursework__modal-title"> Electives </h4>
+                                <i class="uil uil-times coursework__modal-close"></i>
+
+                                <ul class="coursework__modal-coursework grid">
+                                    <li class="coursework__modal-service">
+                                        <i class="uil uil-check-circle coursework__modal-icon"></i>
+                                        <p>ECE 112 - Intro to Power Systems</p>
+                                    </li>
+                                    <li class="coursework__modal-service">
+                                        <i class="uil uil-check-circle coursework__modal-icon"></i>
+                                        <p>ECE 121B - Principles of Semiconductor Device Design</p>
+                                    </li>
+                                    <li class="coursework__modal-service">
+                                        <i class="uil uil-check-circle coursework__modal-icon"></i>
+                                        <p>ECE 133A - Applied Numerical Computing</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--==================== SKILLS ====================-->
+                <h2 class="section__title">Skills</h2>
+                <div class="skills__container container grid">
+                    <div>
+                        <!--==================== SKILL 1 ====================-->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-brackets-curly skills__icon"></i>
+
+                                <div>
+                                    <h1 class="skills__title">Programming Languages</h1>
+                                    <span class="skills__subtitle">Written ~10000 LOC</span>
+                                </div>
+
+                                <i class="uil uil-arrow-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">C++</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__c"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Python</h3>
+                                        <span class="skills__number">85%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__python"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Matlab</h3>
+                                        <span class="skills__number">85%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__matlab"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!--==================== SKILL 2 ====================-->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-english-to-chinese skills__icon"></i>
+
+                                <div>
+                                    <h1 class="skills__title">Foreign Languages</h1>
+                                    <span class="skills__subtitle">Spoken + Written</span>
+                                </div>
+
+                                <i class="uil uil-arrow-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Mandarin - Spoken</h3>
+                                        <span class="skills__number">Fluent</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__mandarin1"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Mandarin - Written</h3>
+                                        <span class="skills__number">Elementary</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__mandarin2"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Cantonese</h3>
+                                        <span class="skills__number">Conversational</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__cantonese"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div>
+                        <!--==================== SKILL 3 ====================-->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-rocket skills__icon"></i>
+
+                                <div>
+                                    <h1 class="skills__title">JPL Certifications</h1>
+                                    <span class="skills__subtitle">Issued July 2019</span>
+                                </div>
+
+                                <i class="uil uil-arrow-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Cleanroom Fundamentals for Contamination Control</h3>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__cleanroom"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">ESD (Electrostatic Discharge) Control</h3>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__esd"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">JCI (JPL Critical Item) Handling</h3>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__jci"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__bg">
+                <p class="footer__copy">&#169; 2023 andrewliu.fyi All rights reserved.</p>
+            </div>
+        </footer>
+
+        <!--==================== SWIPER JS ====================-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--==================== MAIN JS ====================-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
