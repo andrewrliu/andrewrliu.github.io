@@ -91,8 +91,8 @@ modalCloses.forEach((modalClose) => {
     }) 
 })
 
-/*==================== TEMPLATE SWIPER  ====================*/
-let swiperTemplate = new Swiper(".template__container", {
+/*==================== PROJECT SWIPER  ====================*/
+let swiperProject = new Swiper(".project__container", {
     cssMode: true,
     loop: true,
 

@@ -728,19 +728,26 @@ img {
   margin-right: var(--mb-0-25);
 }
 
+/*==================== INTEREST ====================*/
+.interest__container{
+  padding-bottom: 2rem;
+}
+
+.interest__img{
+  width: 300px;
+  border-radius: .5rem;
+  justify-self: center;
+  align-self: center;
+}
+
+.interest__description{
+  margin-bottom: var(--mb-1-5);
+}
+
 /* Active Modal */
 .active-modal{
   opacity: 1;
   visibility: visible;
-}
-
-/*==================== INTEREST ====================*/
-.interest__title{
-  text-align: center;
-  align-self: center;
-}
-.interest__container{
-  height: 75vh;
 }
 
 /*==================== PORTFOLIO ====================*/
@@ -753,40 +760,27 @@ img {
 }
 
 /*==================== PROJECT ====================*/
-.project__title{
-  text-align: center;
-  align-self: center;
-}
 .project__container{
-  height: 75vh;
-}
-
-/*==================== TEMPLATE ====================*/
-.template__container{
   overflow: initial;
 }
 
-.template__content{
+.project__content{
   padding: 0 1.5rem;
 }
 
-.template__img{
+.project__img{
   width: 265px;
   border-radius: .5rem;
   justify-self: center;
 }
 
-.template__title{
+.project__title{
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-0-5);
 }
 
-.template__description{
+.project__description{
   margin-bottom: var(--mb-0-75);
-}
-
-.template__button:hover .button__icon{
-  transform: translateX(.25rem);
 }
 
 .swiper-button-prev::after,
@@ -794,7 +788,7 @@ img {
   content: '';
 }
 
-.swiper-template-icon{
+.swiper-project-icon{
   font-size: 2rem;
   color: var(--first-color);
 }
@@ -997,13 +991,23 @@ img {
     display: grid;
     grid-template-columns: .6fr;
     justify-content: center;
-    }
-
-  .template__img{
-    width: 320px;
   }
-  .template__content{
+
+  .interest__container{
+    column-gap: 3rem;
     grid-template-columns: 1fr 1.5fr;
+  }
+  .interest__img{
+    width: 350px;
+  }
+  .interest__description{
+    text-align: initial;
+  }
+
+  .project__img{
+    width: 400px;
+  }
+  .project__content{
     align-items: center;
     padding: 0 6rem;
   }
@@ -1027,27 +1031,40 @@ img {
     grid-template-columns: 1fr 1.5fr;
   }
   .about__img{
-    width: 550px;
+    width: 400px;
   }
 
   .coursework__container{
     grid-template-columns: repeat(3, 275px);
+  }
+  .coursework__modal-content{
+    width: 500px;
   }
 
   .highlight__sections{
     grid-template-columns: .5fr;
   }
 
-  .template__content{
-    padding: 0 10rem;
+  .interest__container{
+    grid-template-columns: 1fr 1.5fr;
+  }
+  .interest__img{
+    width: 450px;
+  }
+
+  .project__img{
+    width: 500px;
+  }
+  .project__content{
+    padding: 0 7rem;
   }
   .swiper-button-prev{
-    left: 7rem;
+    left: 4rem;
   }
   .swiper-button-next{
-    right: 7rem;
+    right: 4rem;
   }
-  .swiper-template-icon{
+  .swiper-project-icon{
     font-size: 3.5rem;
   }
   .swiper-container-horizontal > .swiper-pagination-bullets{
