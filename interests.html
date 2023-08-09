@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+        
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="swiper-bundle.min.css">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="styles.css">
+
+        <title>andrewliu.fyi</title>
+    </head>
+    <body>
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HEADER ====================-->
+            <header class="header" id="header">
+                <nav class="nav container">
+                    <h4>andrewliu.fyi</h4>
+
+                    <div class="nav__menu" id="nav-menu">
+                        <ul class="nav__list grid">
+                            <li class="nav__item">
+                                <a href="./" class="nav__link">
+                                    <i class="uil uil-estate nav__icon"></i> Home
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="./aboutme" class="nav__link">
+                                    <i class="uil uil-user nav__icon"></i> About Me
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="./interests" class="nav__link active-link">
+                                    <i class="uil uil-user nav__icon"></i> Interests
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="./portfolio" class="nav__link">
+                                    <i class="uil uil-scenery nav__icon"></i> Portfolio
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="./projects" class="nav__link">
+                                    <i class="uil uil-scenery nav__icon"></i> Projects
+                                </a>
+                            </li>
+                        </ul>
+                        <i class="uil uil-times nav__close" id="nav-close"></i>
+                    </div>
+
+                    <div class="nav__btns">
+                        <!-- Theme Change Button -->
+                        <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                        <div class="nav__toggle" id="nav-toggle">
+                            <i class="uil uil-apps"></i>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <!--==================== INTEREST ====================-->
+            <section class="interest section" id="interest">
+                <h2 class="section__title">Interests</h2>
+                <!--==================== INTEREST 1 ====================-->
+                <div class="interest__container container grid">
+                    <img src="interest1_img.jpg" alt="" class="interest__img">
+
+                    <div class="interest__data">
+                        <h3 class="interest__title">Credit Card Rewards</h3>
+                        <p class="interest__description">I got my first credit card shortly before starting college to build my credit score as early as possible. While researching for the best beginner/student credit card, I quickly realized 
+                            as long as you are financially responsible, knowing the ins and outs of credit card rewards can multiply your redemption values (cash back). For example, my brother flies United Airlines frequently and bought all his tickets with 
+                            his Chase United Explorer card. However, being a frequent flyer, he didn't get any benefits purchasing United tickets with his Explorer card other than 2x United points. Instead, I suggested he apply for the Chase Sapphire Reserve (CSR) 
+                            which offers 3x on travel purchases (including United tickets), in addition to other benefits. At the time, the CSR annual fee was $450, but is effectively $150 after subtracting the $300 travel credit (which my brother would use every year). More 
+                            importantly, Chase Ultimate Rewards (UR) are worth more than United points because you can transfer UR to partner airlines/hotels at a 1:1 ratio (United included) and United has lower redemption values among other Chase partners (~1.2cpp vs 2.0cpp). 
+                            UR are typically valued at 2cpp because Hyatt redemptions are usually ~2cpp, but ultimately YMMV. First class tickets can easily have 10-20cpp, but at a minimum UR are worth 1.5cpp for travel redemptions through Chase's portal with the CSR. Overall, 
+                            my brother was conservatively losing out on ~3.6cpp (3x2.0cpp - 2x1.2cpp) for every dollar spent on United flights and would make back the CSR annual fee in points with $4166.67 annually spent on United flights ($1527.78 if he cancelled his Explorer 
+                            [$95 annual fee]). And this doesn't include the sign-up bonus (60,000 UR = $1200) or other points he would earn by having the CSR be his new daily driver.
+                            <br><br>
+                            YouTubers I Follow: Ask Sebby
+                        </p>
+                        <span class="button button--flex button--small coursework__button">
+                            Credit Card Portfolio
+                            <i class="uil uil-credit-card button__icon"></i>
+                        </span>
+                        <div class="coursework__modal">
+                            <div class="coursework__modal-content">
+                                <h4 class="coursework__modal-title">Cards I Currently Have</h4>
+                                <i class="uil uil-times coursework__modal-close"></i>
+
+                                <ul class="coursework__modal-coursework grid">
+                                    <li class="coursework__modal-service">
+                                        <i class="uil uil-credit-card coursework__modal-icon"></i>
+                                        <p>Discover It Student</p>
+                                    </li>
+                                    <li class="coursework__modal-service">
+                                        <i class="uil uil-credit-card coursework__modal-icon"></i>
+                                        <p>Chase United Explorer </p>
+                                    </li>
+                                    <li class="coursework__modal-service">
+                                        <i class="uil uil-credit-card coursework__modal-icon"></i>
+                                        <p>Chase Freedom Unlimited</p>
+                                    </li>
+                                    <li class="coursework__modal-service">
+                                        <i class="uil uil-credit-card coursework__modal-icon"></i>
+                                        <p>Chase Freedom</p>
+                                    </li>
+                                    <li class="coursework__modal-service">
+                                        <i class="uil uil-credit-card coursework__modal-icon"></i>
+                                        <p>Chase Sapphire (downgraded from Chase Sapphire Preferred)</p>
+                                    </li>
+                                    <li class="coursework__modal-service">
+                                        <i class="uil uil-credit-card coursework__modal-icon"></i>
+                                        <p>Chase Marriot Bonvoy Bold</p>
+                                    </li>
+                                    <li class="coursework__modal-service">
+                                        <i class="uil uil-credit-card coursework__modal-icon"></i>
+                                        <p>AmEx Cash Magnet</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--==================== INTEREST 2 ====================-->
+                <div class="interest__container container grid">
+                    <img src="interest2_img.jpg" alt="" class="interest__img">
+
+                    <div class="interest__data">
+                        <h3 class="interest__title">Fragrances</h3>
+                        <p class="interest__description">My passion for fragrances started when I first entered college and didn't want to smell like every other person on campus. Wearing cologne wasn't common within my highschool and family, so I came in with an open mind. 
+                            Like many other items I have bought, I enjoy taking the time to research, and eventually purchase, items which are unique/custom to me. For fragrances, this entails scents that not only fit the occasion, but also ones I particularly 
+                            enjoy. Scents are such a subjective opinion, so I rank them on the smell and how I feel wearing it, not what other people think. However, initally I was like any other person first discovering the fragrance community: 
+                            watching every reviewer's top 10 list and purchasing the most commonly mentioned colognes in hopes of getting the most compliments. It took me a few years to realize that fragrances are an extension of your personality and you rarely receive the
+                            spontaneous compliment from a stranger, which is more likely a result of being personable rather than the fragrance itself. Ultimately, what drove me to the realization was smelling many of these "top 10" fragrances and 
+                            discovering that I disliked many of them. Unsurprisingly, I have a different scent preference, but my own preferences continue to change as I smell more fragrances. If I could give one advice to anyone thinking about purchasing a fragrance, 
+                            it would be to never blind buy: always smell it in person (whether at the mall, fragrance store, or buying a sample online). It will save you invaluable time, money, and hassle when you discover you actually dislike the supposedly "10/10" fragrance.
+                            <br><br>
+                            YouTubers I Follow: Justin Copeland, The Perfume Guy
+
+                        </p>
+                        <span class="button button--flex button--small coursework__button">
+                            Fragrance Collection
+                            <i class="uil uil-pagelines button__icon"></i>
+                        </span>
+                        <div class="coursework__modal">
+                            <div class="coursework__modal-content">
+                                <h4 class="coursework__modal-title">Fragrances I Currently Own</h4>
+                                <i class="uil uil-times coursework__modal-close"></i>
+
+                                <ul class="coursework__modal-coursework grid">
+                                    <li class="coursework__modal-service">
+                                        <i class="uil uil-pagelines coursework__modal-icon"></i>
+                                        <p>Acqua Di Parma - Fico di Amalfi <br> ripe, sweet, but somehow slightly green fig</p>
+                                    </li>
+                                    <li class="coursework__modal-service">
+                                        <i class="uil uil-pagelines coursework__modal-icon"></i>
+                                        <p>Tom Ford - Beau de Jour <br> classic, lavendar-forward fougere (barbershop-style)</p>
+                                    </li>
+                                    <li class="coursework__modal-service">
+                                        <i class="uil uil-pagelines coursework__modal-icon"></i>
+                                        <p>Rochas - Moustache EDP <br> opens peppery + citrusy but dries down to vanilla + patchouli combo </p>
+                                    </li>
+                                    <li class="coursework__modal-service">
+                                        <i class="uil uil-pagelines coursework__modal-icon"></i>
+                                        <p>Xerjoff - Naxos <br> smooth tobacco and honey in a bottle </p>
+                                    </li>
+                                    <li class="coursework__modal-service">
+                                        <i class="uil uil-pagelines coursework__modal-icon"></i>
+                                        <p>Maison Francis Kurkdjian - Grand Soir <br> coziest scent consisting of just vanilla and amber</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--==================== INTEREST 3 ====================-->
+                <div class="interest__container container grid">
+                    <img src="interest3_img.jpg" alt="" class="interest__img">
+
+                    <div class="interest__data">
+                        <h3 class="interest__title">Hiking</h3>
+                        <p class="interest__description">The pandemic made everyone appreciate the outdoors, and I was no exception. I had the opportunity to hike various trails around LA and visit several national parks (Zion, Bryce, Sequoia, and Kings Canyon National Park) 
+                            with family while classes were still remote. Nothing motivated me more than being recommended, and subequently binging, Kraig Adams' pictureque and serene solo backpacking videos. There was something about the absolute quietness, where you could 
+                            hear leaves rustle and the crunch of dirt with each step, overlayed on nature's backdrop that spawned the hiking itch within me. I haven't gotten the chance to go on a backpacking trip yet, but the Half-Dome hike at Yosemite is certainly at the 
+                            top of the list. I highly recommend the AllTrails app for discovering top hikes in the area and purchasing the premium plan to track your hike without needing internet connection. 
+                            <br><br>
+                            YouTubers I Follow: Kraig Adams, Dan Becker
+                        </p>
+                        <span class="button button--flex button--small coursework__button">
+                            Favorite Hikes
+                            <i class="uil uil-mountains button__icon"></i>
+                        </span>
+                        <div class="coursework__modal">
+                            <div class="coursework__modal-content">
+                                <h4 class="coursework__modal-title">Current Favorite Hikes</h4>
+                                <i class="uil uil-times coursework__modal-close"></i>
+
+                                <ul class="coursework__modal-coursework grid">
+                                    <li class="coursework__modal-service">
+                                        <i class="uil uil-mountains coursework__modal-icon"></i>
+                                        <p>Bryce Canyon National Park - Fairyland Loop Trail </p>
+                                    </li>
+                                    <li class="coursework__modal-service">
+                                        <i class="uil uil-mountains coursework__modal-icon"></i>
+                                        <p>Zion National Park - Observation Point via East Mesa Trail </p>
+                                    </li>
+                                    <li class="coursework__modal-service">
+                                        <i class="uil uil-mountains coursework__modal-icon"></i>
+                                        <p>Kings Canyon National Park - Mist Falls </p>
+                                    </li>
+                                    <li class="coursework__modal-service">
+                                        <i class="uil uil-mountains coursework__modal-icon"></i>
+                                        <p>Mount Tamalpais State Park - Dipsea Trail, Steep Ravine Trail, and Matt Davis Loop </p>
+                                    </li>
+                                    <li class="coursework__modal-service">
+                                        <i class="uil uil-mountains coursework__modal-icon"></i>
+                                        <p>Mission Peak Regional Reserve - Mission Peak Loop</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--==================== INTEREST 4 ====================-->
+                <div class="interest__container container grid">
+                    <img src="interest4_img.jpg" alt="" class="interest__img">
+
+                    <div class="interest__data">
+                        <h3 class="interest__title">Cooking/Cocktails</h3>
+                        <p class="interest__description">I began cooking out of necessity once I moved into an off campus apartment my senior year. However, I found much joy in the task because I could make whatever I craved. I typically cook every meal other than when 
+                            my friends want to eat outside. Not only does it save money and time, but the food is healthier and quicker to make with each repetition. I have a few go-to recipes when I am short on time, but I enjoy trying out new recipes over a chill weekend.
+                            On the first try, I will follow the recipe to a T. But after making a dish several times, I begin to understand how each ingredient affects the overall flavor and adjust to my liking. When it comes to cooking tips, I really enjoy watching 
+                            J. Kenji Lopez-Alt and Ethan Chlebowski's YouTube videos. Maybe it's the engineer in me, but they both take a scientific approach to cooking which allows me to fundamentally understand why a certain method is recommended.
+                            <br><br>
+                            I started learning to make cocktails because outside drinks are quite expensive, particularly for college students. My friends and I would often do a dinner + drinks night at one of our apartments and watch a movie/tv-show afterwards. But 
+                            homemade cocktails also taste infinetely better than bottom shelf liquor + random chaser when you are pre-gaming for a night out. The cost difference is incremental, plus you can keep track of exact alcohol consumption since you'll be
+                            measuring each ingredient with a jigger anyways. I enjoy watching Anders Erickson's YouTube videos for recipes. His video format not only provides the recipe, but also gives a nice history on the drink and occasionally some variations. If 
+                            you are passionate about coffee, my friend and I like to call Anders the "alcoholic James Hoffmann". There's just something about Anders' video style and appearance that is very Hoffmann-esque.
+                            <br><br>
+                            YouTubers I Follow: J. Kenji Lopez-Alt, Ethan Chlebowski, Anders Erickson
+                        </p>
+                        <span class="button button--flex button--small coursework__button">
+                            Favorite Dishes/Cocktails
+                            <i class="uil uil-restaurant button__icon"></i>
+                        </span>
+                        <div class="coursework__modal">
+                            <div class="coursework__modal-content">
+                                <h4 class="coursework__modal-title">Current Favorite Dishes/Cocktails</h4>
+                                <i class="uil uil-times coursework__modal-close"></i>
+
+                                <ul class="coursework__modal-coursework grid">
+                                    <li class="coursework__modal-service">
+                                        <i class="uil uil-restaurant coursework__modal-icon"></i>
+                                        <p>Marcella Hazan's Three Ingredient Pasta Sauce </p>
+                                    </li>
+                                    <li class="coursework__modal-service">
+                                        <i class="uil uil-restaurant coursework__modal-icon"></i>
+                                        <p>Reverse Seared Steak Basted in Butter, Rosemary, and Thyme </p>
+                                    </li>
+                                    <li class="coursework__modal-service">
+                                        <i class="uil uil-restaurant coursework__modal-icon"></i>
+                                        <p>Cold Sesame Noodles </p>
+                                    </li>
+                                    <li class="coursework__modal-service">
+                                        <i class="uil uil-glass-martini-alt coursework__modal-icon"></i>
+                                        <p>Whiskey Sour </p>
+                                    </li>
+                                    <li class="coursework__modal-service">
+                                        <i class="uil uil-glass-martini-alt coursework__modal-icon"></i>
+                                        <p>Mojito</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__bg">
+                <p class="footer__copy">&#169; 2023 andrewliu.fyi All rights reserved.</p>
+            </div>
+        </footer>
+
+        <!--==================== SWIPER JS ====================-->
+        <script src="swiper-bundle.min.js"></script>
+
+        <!--==================== MAIN JS ====================-->
+        <script src="main.js"></script>
+    </body>
+</html>
